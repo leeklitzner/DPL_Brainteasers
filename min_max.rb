@@ -1,7 +1,7 @@
 @array_numbers = []
 def get_array
-  puts "Enter the number you would like to add to the array."
-  puts "Type DONE once you are finished."
+  puts "Enter the number you would like to add."
+  puts "Type DONE once you have completed this."
   number=gets.strip
   ask_min_or_max(@array_numbers) if number == "DONE"
   number = number.to_i
@@ -10,14 +10,14 @@ def get_array
 end
 
 def ask_min_or_max(array)
-  puts "Type min or max to retrieve the smallest or largest value."
+  puts "Type min or max to retrieve the smallest or largest value!"
   decision = gets.strip
   if decision == "min"
     find_min(array)
   elsif decision == "max"
     find_max(array)
   else
-    puts "Invalid choice, please try again"
+    puts "Invalid choice, please make another selection!"
     ask_min_or_max(array)
   end
 

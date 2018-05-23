@@ -1,9 +1,9 @@
 require 'pry'
-require 'colorize'
+
 
 def main
   print `clear`
-  puts "----palindrome checker----".green
+  puts "----PALINDROME CHECKER----"
   @word = gets.strip.downcase.gsub(" ", "").split("")
   check
 end
@@ -12,9 +12,8 @@ def check
   reverse = []
   @word.each {|letter| reverse.unshift(letter) }
   if @word == reverse
-    puts "it's a palindrome.".green
+    puts "Indeed it is a palindrome!"
   else
-    puts "nope.".red
+    puts "It is not a palindrome"
   end
 end
-main

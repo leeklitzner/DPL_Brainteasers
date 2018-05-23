@@ -1,7 +1,7 @@
-function vowel_count(str1)
+function vowel_counter(str1)
 {
   var vowel_list = 'aeiouAEIOU';
-  var vcount = 0;
+  var vcounter = 0;
 
   for(var x = 0; x < str1.length ; x++)
   {
@@ -11,5 +11,5 @@ function vowel_count(str1)
     }
 
   }
-  return vcount;
+  return vcounter;
 }
